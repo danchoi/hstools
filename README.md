@@ -15,3 +15,14 @@ Run:
     
     # (NB github json is already pretty-formatted, but pjson will reindent it)
 
+### pxml: an xml pretty printer
+
+Compile: 
+
+    ghc -o pxml pxml.hs 
+
+Run:
+
+    curl http://news.ycombinator.com/rss | pxml
+    
+
