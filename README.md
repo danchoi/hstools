@@ -7,6 +7,7 @@ Some simple command line tools made with Haskell.
 
 Compile: 
 
+    cabal install json
     ghc -o pjson pjson.hs 
 
 Run:
@@ -19,6 +20,7 @@ Run:
 
 Compile: 
 
+    cabal install hxt
     ghc -o pxml pxml.hs 
 
 Run:
