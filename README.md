@@ -3,7 +3,7 @@
 Some simple command line tools made with Haskell. 
 
 
-### pjsono: json pretty printer
+### pjson: a json pretty printer
 
 Compile: 
 
