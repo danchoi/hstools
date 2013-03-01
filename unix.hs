@@ -133,6 +133,10 @@ commands =
 
 -- And our main wrapper
 main = do
-    [who] <- getArgs
-    hPutStrLn stderr $ "progName: " ++ who
-    maybe (return ()) id $ lookup who commands
+    xs <- getArgs
+    case xs of
+      [x] -> do
+        hPutStrLn stderr $ "progName: " ++ x
+        maybe (return ()) id $ lookup x commands
+      otherwise ->
+        mapM_ putStrLn $ map fst commands
