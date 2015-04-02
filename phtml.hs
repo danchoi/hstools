@@ -1,8 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
-import Text.HandsomeSoup
 import Control.Monad.Trans.Maybe
-import Text.CSS.Parser
 
 import Text.XML.HXT.Core
 
